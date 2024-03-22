@@ -1,0 +1,171 @@
+/* *********************************************************************** */
+/* Used Color Palette - defined as variables
+https://colorhunt.co/palette/ffbb5cff9b50e25e3ec63d2f
+*/
+/* these are variables, which can be used in this *.css file - see further down*/
+:root {
+    --color-1:rgb(255, 187, 92);
+    --color-2:rgb(255, 155, 80);
+    --color-3:rgb(226, 94, 62);
+    --color-4:rgb(198, 61, 47);
+
+    --color-5: black;
+    --color-6: gray;
+    --color-7: white;
+}
+
+/* *********************************************************************** */
+/* General Setting for all Elements
+/* *********************************************************************** */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 10pt;
+    text-align: left;
+    margin: 0.5rem;
+    background-color: var(--color-1);
+}
+/* *********************************************************************** */
+/* General Setting for specific Elements
+/* *********************************************************************** */
+h1{
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: var(--color-1);
+    background-color: var(--color-4);
+}
+
+h2{
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--color-1);
+    background-color: var(--color-4);
+}
+
+p, select{    
+    font-size: 1.6rem;
+    color: var(--color-5);
+    margin: 1rem;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+a{    
+    font-size: 1.6rem;
+}
+
+button{
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--color-1);
+    background-color: var(--color-4);
+}
+
+hr{
+    border: 5px solid var(--color-4);
+}
+/* *********************************************************************** */
+/* Specific Setting 
+/* *********************************************************************** */
+.img-w-25{
+    width: 25pt;
+}
+.img-w-50{
+    width: 50pt;
+}
+.img-w-100{
+    width: 100pt;
+}
+.img-w-150{
+    width: 150pt;
+}
+.img-w-200{
+    width: 200pt;
+}
+.img-w-300{
+    width: 300pt;
+}
+
+.div_data{
+    font-weight: bold;
+    font-size: 1.8rem;
+    width: 10rem;
+    height: 10rem;
+    color: var(--color-7);
+    background-color: var(--color-4);  
+}
+/* *********************************************************************** */
+/* Flex Box
+/* *********************************************************************** */
+.flexbox_1 {
+    display: flex;    
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+}
+/* *********************************************************************** */
+/* Table Definitions
+/* *********************************************************************** */
+.table_1_col{
+    display: grid;
+    grid-template-rows:    repeat(auto);
+    grid-template-columns: repeat(1, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.table_2_col{
+    display: grid;
+    grid-template-rows:    repeat(auto);
+    grid-template-columns: repeat(2, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+/*...........................................................*/
+/* select ALL childs of table_col_x */
+.table_item {
+    font-size: 1.2rem;
+    border: 1px solid black;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+.table_item_bold {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+    margin: 0px;
+}
+/* *********************************************************************** */
+/* Details
+/* *********************************************************************** */
+details {
+    position: absolute;
+    font-size: 1.1rem;
+    border: 1px solid #aaa;
+    border-radius: 0px;
+    padding: 0.0em 0.0em 0; 
+  }
+  
+  summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: -0.0em -0.0em 0;
+    padding: 0.0em;
+  }
+  
+  details[open] {
+    padding: 0.0em;
+  }
+  
+  details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.0em;
+  }
+  
