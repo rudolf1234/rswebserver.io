@@ -220,7 +220,7 @@ data = data +   data_row("h3", "Reiber, Peter Josef", 1) +
                 
                 data_row("h3", "Stolz, Sophia<br>geb.Harnecker", 2) + 
                 data_row("img", "StolzSophia_gebHarnecker_Sterbeurkunde.jpg") +
-                data_row("img", "Oma_Gisela_Rudolf.jpg") +
+                data_row("img", "oma_gisela_rudolf.jpg") +
                 data_row("img", "StolzSophia_DeutscheBundesbahnPersonenausweis_00.jpg") +
                 data_row("empty", "") +
                 data_row("empty", "") +
