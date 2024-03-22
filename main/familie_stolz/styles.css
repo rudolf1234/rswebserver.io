@@ -1,0 +1,166 @@
+/* *********************************************************************** */
+/* Used Color Palette - defined as variables
+https://colorhunt.co/palette/ffbb5cff9b50e25e3ec63d2f
+*/
+/* these are variables, which can be used in this *.css file - see further down*/
+:root {
+    --max-rows: 30;
+    --max-cols: 30;
+    --color-1:rgb(255, 187, 92);
+    --color-2:rgb(255, 155, 80);
+    --color-3:rgb(226, 94, 62);
+    --color-4:rgb(198, 61, 47);
+
+    --color-5: black;
+    --color-6: gray;
+    --color-7: white;
+
+    --box_width:  200px;
+    --box_height: 100px;
+}
+/* *********************************************************************** */
+/* General Setting for all Elements
+/* *********************************************************************** */
+h1{
+    font-family: Arial; 
+    font-size: 20pt; 
+    color: #FF0000; 
+    font-weight: bold
+}
+h2{
+    font-family: Arial; 
+    font-size: 16pt; 
+    color: #FF0000; 
+    font-weight: bold
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;; 
+    font-size: 14pt; 
+    color: #FF0000; 
+    font-weight: bold;
+    margin-left: 10px;
+    text-align: left;
+}
+
+p{
+    font-family: Arial; 
+    font-size: 14pt; 
+    font-weight: normal;
+    color: #000000;
+    margin-left: 10px;
+}
+li{
+    font-family: Arial; 
+    font-size: 14pt; 
+    font-weight: normal;
+    color: #000000;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+body{
+    background-color:#ebc887;
+    color : #FFFFFF;
+    margin-top: 5pt;
+    margin-left: 5pt;
+}
+hr{
+    border-color: green;
+    border-width: 5px;
+
+}
+img{
+    width: 200pt;
+    margin-right: 10pt;
+    align-items: center;
+}
+.table_2_col{
+    display: grid;
+    grid-template-rows:    repeat(auto);
+    grid-template-columns: repeat(2, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.table_3_col{
+    display: grid;
+    grid-template-rows:    repeat(auto);
+    grid-template-columns: repeat(3, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.table_4_col{
+    display: grid;
+    grid-template-rows:    repeat(auto);
+    grid-template-columns: repeat(4, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.table_5_col{
+    display: grid;
+    grid-template-rows:    repeat(auto);
+    grid-template-columns: repeat(5, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.table_6_col{
+    display: grid;
+    grid-template-rows:    repeat(auto);
+    grid-template-columns: repeat(6, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.div_data{
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;;
+}
+/* *********************************************************************** */
+/* Flowchart
+/* *********************************************************************** */
+#container {
+    margin:auto;
+    position: block;
+ } 
+.box {
+    position: absolute;
+    width: var(--box_width);
+    height: var(--box_height);
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--color-5);
+    text-align: center;
+    border:2px solid var(--color-4);
+ }
+ .box_data {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--color-5);
+    text-align: center;
+    border:2px solid var(--color-4);
+ }
+ .line_hor
+ {
+    position: absolute;
+    height: 2px;
+    background-color: var(--color-4);
+    border:2px solid var(--color-4);
+ }
+ .line_ver
+ {
+    position: absolute;
+    width: 2px;
+    background-color: var(--color-4);
+    border:2px solid var(--color-4);
+ }
+
+
