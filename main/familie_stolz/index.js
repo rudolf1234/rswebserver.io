@@ -115,15 +115,15 @@ function line_hor(row, col, length){
 // MAIN DATA FUNCTION
 //#########################################################################
 // row 0
-res = res + box     (0, 0,  0, "Stolz Jakob<br>?? 1807, Münster<br>???");
-res = res + box     (0, 1,  0, "Stolz, Katharina<br>geb. ???<br>???<br>???");
-res = res + box     (0, 2,  0, "???, Johann, Roth<br>6. April 1819<br>19. April 1879");
-res = res + box     (0, 3,  0, "???, ???<br>geb. ???<br>??? 1812<br>???");
+res = res + box     (0, 0,  0, "Stolz Jakob<br>?? 1807, Münster<br>???<br>Maurer");
+res = res + box     (0, 1,  0, "Stolz, Katharina<br>geb. Koch<br>???<br>???");
+res = res + box     (0, 2,  0, "Feiner, Johann, Roth<br>6. April 1813, Roth<br>19. April 1879, Roth<br>Fabrikarbeiter");
+res = res + box     (0, 3,  0, "Feiner, Elisabeth<br>geb. ???<br>??? 1812<br>???<br>Fuhrmann");
 
 res = res + box     (0, 4,  0, "Harnecker, Jakob<br>22. März 1822<br>???");
-res = res + box     (0, 5,  0, "Harnecker, Philippina<br>geb. Müller<br>19. März 1819<br>???");
-res = res + box     (0, 6,  0, "???<br>2. Februar 1822, Münster<br>5. Dezember 1899, Münster");
-res = res + box     (0, 7,  0, "???, Sofia <br>geb. Klingler<br>9. Februar 1832, Münster<br>??. Juli 1911, Münster");
+res = res + box     (0, 5,  0, "Harnecker, Philippina<br>geb. Müller<br>19. März 1819, Diertersheim<br>???");
+res = res + box     (0, 6,  0, "Schneider, Jakob<br>2. Februar 1822, Münster<br>5. Dezember 1899, Münster");
+res = res + box     (0, 7,  0, "Schneider, Sofia <br>geb. Klingler<br>9. Februar 1832, Münster<br>??. Juli 1911, Münster");
 
 res = res + line_hor(0, 0, box_width + box_hor_dist);
 res = res + line_ver(0, 0, box_ver_dist);
@@ -143,10 +143,10 @@ res = res + line_ver(0, 7, 0.5*box_ver_dist);
 
 
 // row 1
-res = res + box     (1, 0,  0, "Stolz Heinrich<br>20. Mai 1841, Münster<br>17. Januar 1908, Münster");
-res = res + box     (1, 2,  0, "Stolz, ???<br>geb. ???<br>14. März 1843, Roth<br>29. Mai 1886, Münster");
+res = res + box     (1, 0,  0, "Stolz Heinrich<br>20. Mai 1841, Münster<br>17. Januar 1908, Münster<br>Fabrikarbeiter");
+res = res + box     (1, 2,  0, "Stolz, ???<br>geb. Feiner<br>14. März 1843, Roth<br>29. Mai 1886, Münster");
 res = res + box     (1, 4,  0, "Harnecker, Johann<br>8. Juni 1858<br>24. November 1927, Münster");
-res = res + box     (1, 6,  0, "Harnecker, ???<br>geb. ???<br>17. Februar 1861, Münster<br>???");
+res = res + box     (1, 6,  0, "Harnecker, Susanna<br>geb. Schneider<br>17. Februar 1861, Münster<br>???");
 
 res = res + line_hor(1, 0, 2*(box_width + box_hor_dist));
 res = res + line_ver(1, 0, 0.5*box_ver_dist);
@@ -157,7 +157,7 @@ res = res + line_ver(1, 4, box_ver_dist);
 res = res + line_ver(1, 6, 0.5*box_ver_dist);
 
 // row 2
-res = res + box     (2, 2,  0, "Stolz Heinrich<br>1. Juni 1880, Münster<br>9. September 1940</a>");
+res = res + box     (2, 2, 14, "Stolz Heinrich<br>1. Juni 1880, Münster<br>9. September 1940<br>Eisenbahnschaffner</a>");
 res = res + box     (2, 4,  2, "Stolz, Sophia<br>geb. Harnecker<br>2. Februar 1890, Münster<br>28. Juni 1971");
 res = res + box     (2, 5,  0, "Klein, Friedrich Johann Phillip<br>???<br>???");
 res = res + box     (2, 6, 12, "Klein Anna Erna<br>geb. Hill<br> 27. Oktober 1905<br>???");
@@ -175,18 +175,18 @@ res = res + line_ver(2, 5, box_ver_dist);
 res = res + line_ver(2, 6, 0.5*box_ver_dist);
 
 // row 3
-res = res + box(3,  0, 0, "Stolz, ???<br>20. April 1927, Münster<br>13. September 1927");
-res = res + box(3,  1, 0, "Stolz, Sophia<br>27. August 1924, Münster<br>29. August 1924");
-res = res + box(3,  2, 0, "Stolz, Klara<br>27. August 1924, Münster<br>29. August 1924");
-res = res + box(3,  3, 0, "Stolz, Johann<br>23. November 1928<br>???");
-res = res + box(3,  4, 0, "<a href=\"0020.html\">Stolz, Heinrich Ferdinand<br>13. Juli 1922, Münster<br>15. Februar 2001</a>");
-res = res + box(3,  5, 7, "Stolz, Margarete Elisabeth Minna<br>geb. Klein<br>11. September 1928<br>3. Februar 1977");
-res = res + box(3,  6, 1, "Reiber, Peter Josef<br>29. Juni 1929<br>???");
-res = res + box(3,  7, 4, "Reiber, Anna Maria<br>geb. Donkel<br>17. Februar 1932<br>???");
-res = res + box(3,  8, 0, "Beuter, Leonhard<br>1901<br>???");
-res = res + box(3,  9, 0, "Beuter, Henriette<br>geb. Happ<br>???<br>???");
-res = res + box(3, 10, 0, "Wehnert, Wilhem<br>1902<br>???");
-res = res + box(3, 11, 0, "Wehnert, Maria<br>geb. ???<br>???<br>???");
+res = res + box(3,  0, 15, "Stolz, Elisabeth<br>20. April 1927, Münster<br>13. September 1927");
+res = res + box(3,  1,  0, "Stolz, Sophia<br>27. August 1924, Münster<br>29. August 1924");
+res = res + box(3,  2,  0, "Stolz, Klara<br>27. August 1924, Münster<br>29. August 1924");
+res = res + box(3,  3, 16, "Stolz, Gerhard Johann<br>23. November 1928<br>???");
+res = res + box(3,  4,  0, "<a href=\"0020.html\">Stolz, Heinrich Ferdinand<br>13. Juli 1922, Münster<br>15. Februar 2001</a>");
+res = res + box(3,  5,  7, "Stolz, Margarete Elisabeth Minna<br>geb. Klein<br>11. September 1928<br>3. Februar 1977");
+res = res + box(3,  6,  1, "Reiber, Peter Josef<br>29. Juni 1929<br>???");
+res = res + box(3,  7,  4, "Reiber, Anna Maria<br>geb. Donkel<br>17. Februar 1932<br>???");
+res = res + box(3,  8,  0, "Beuter, Leonhard<br>1901<br>???");
+res = res + box(3,  9,  0, "Beuter, Henriette<br>geb. Happ<br>???<br>???");
+res = res + box(3, 10,  0, "Wehnert, Wilhem<br>1902<br>???");
+res = res + box(3, 11,  0, "Wehnert, Maria<br>geb. ???<br>???<br>???");
 
 res = res + line_hor(3, 4, box_width + box_hor_dist);
 res = res + line_ver(3, 4, box_ver_dist);
@@ -267,7 +267,7 @@ data = data +   data_row("h3", "Reiber, Peter Josef", 1) +
                 data_row("empty", "") +
                 data_row("empty", "") +
                 
-                data_row("h3", "Stolz, Sophia<br>geb.Harnecker<br><br>sie ist die Patentante von Gill, Gisela Sofia", 2) + 
+                data_row("h3", "Stolz, Sophia<br>geb.Harnecker<br><br>sie ist die Patentante von Girl, Gisela Sofia geb. Spira<br><br>Heirat mit Stolz Heinrich am 14. September 1921 auf dem Standesamt in Bingerbrück, kirchliche Trauung am 15. September in Bingerbrück, Trauzeugen Karl Gerlach und Jakob Harnecker", 2) + 
                 data_row("img", "StolzSophia_gebHarnecker_Sterbeurkunde.jpg") +
                 data_row("img", "oma_gisela_rudolf.jpg") +
                 data_row("img", "StolzSophia_DeutscheBundesbahnPersonenausweis_00.jpg") +
@@ -348,11 +348,31 @@ data = data +   data_row("h3", "Reiber, Peter Josef", 1) +
                 data_row("empty", "") +
                 data_row("empty", "") +
                 data_row("empty", "") +
+                data_row("empty", "") +
+                
+                data_row("h3", "Stolz Heinrich<br><br>Heirat mit Stolz, Sophia geb. Harnecker am 14. September 1921 auf dem Standesamt in Bingerbrück, kirchliche Trauung am 15. September in Bingerbrück, Trauzeugen Karl Gerlach und Jakob Harnecker<br><br>am 9. September 1940 bei einem Eisenbahnunfall in Koblenz ums Leben gekommen", 14) + 
+                data_row("img", "stolz_heinrich_opa_deutsche_reichsbahn.jpg") +
+                data_row("empty", "") +
+                data_row("empty", "") +
+                data_row("empty", "") +
+                data_row("empty", "") +
+                
+                data_row("h3", "Stolz, Elisabeth<br><br>Paten waren Elisa Harnecker geb. Schall, Taufe in Langenlonsheim am 23. April 1927", 15) + 
+                data_row("empty", "") +
+                data_row("empty", "") +
+                data_row("empty", "") +
+                data_row("empty", "") +
+                data_row("empty", "") +
+                
+                data_row("h3", "Stolz, Gerhard Johann<br><br>Taufe am 25. November 1928, Paten waren Johann Harnecker", 16) + 
+                data_row("empty", "") +
+                data_row("empty", "") +
+                data_row("empty", "") +
+                data_row("empty", "") +
                 data_row("empty", "");
 
-
-                
-                
+                               
+                              
                 
                 
 res = res + data_add(data, 10);
