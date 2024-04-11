@@ -1,0 +1,122 @@
+/* *********************************************************************** */
+/* Used Color Palette - defined as variables
+https://colorhunt.co/palette/ffbb5cff9b50e25e3ec63d2f
+*/
+/* these are variables, which can be used in this *.css file - see further down*/
+:root {
+    --max-rows: 30;
+    --max-cols: 30;
+    --color-1:rgb(255, 187, 92);
+    --color-2:rgb(255, 155, 80);
+    --color-3:rgb(226, 94, 62);
+    --color-4:rgb(198, 61, 47);
+
+    --color-5: black;
+    --color-6: gray;
+    --color-7: white;
+}
+/* *********************************************************************** */
+/* General Setting for all Elements
+/* *********************************************************************** */
+h1{
+    font-family: Arial; 
+    font-size: 20pt; 
+    color: #FF0000; 
+    font-weight: bold
+}
+h2{
+    font-family: Arial; 
+    font-size: 16pt; 
+    color: #FF0000; 
+    font-weight: bold
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;; 
+    font-size: 14pt; 
+    color: #FF0000; 
+    font-weight: bold;
+    margin-left: 10px;
+}
+p{
+    font-family: Arial; 
+    font-size: 14pt; 
+    font-weight: normal;
+    color: #000000;
+    margin-left: 10px;
+}
+li{
+    font-family: Arial; 
+    font-size: 14pt; 
+    font-weight: normal;
+    color: #000000;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+body{
+    background-color:#ebc887;
+    color : #FFFFFF;
+    margin-top: 5pt;
+    margin-left: 5pt;
+}
+hr{
+    border-color: green;
+    border-width: 5px;
+
+}
+img{
+    width: 200pt;
+    margin-right: 10pt;
+    align-items: center;
+}
+.img_1{
+    width: 500pt;
+    margin-right: 10pt;
+    align-items: center;
+}
+/* the following size is used in the mediaprojektor*/
+.img_mp{
+    width: 500pt;
+    margin-right: 10pt;
+    align-items: center;
+}
+.p_image{
+    font-family: Arial; 
+    font-size: 16pt; 
+    font-weight: bold;
+    width: 500pt;
+    background-color: #FFFF00;
+    color: #FF0000;
+}
+.flexbox {
+    display: flex;    
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    margin-right: 10pt;
+}
+
+div{
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;;
+}
+.table_2_col{
+    display: grid;
+    grid-template-rows:    repeat(auto);
+    grid-template-columns: repeat(2, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+label, input{    
+    font-family: Arial;
+    font-size: 14pt; 
+    font-weight: normal;
+    color: var(--color-5);
+    overflow: hidden;
+    word-break: break-all;
+}
+
+
